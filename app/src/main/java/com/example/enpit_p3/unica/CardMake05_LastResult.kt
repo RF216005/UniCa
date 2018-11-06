@@ -2,17 +2,17 @@ package com.example.enpit_p3.unica
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import kotlinx.android.synthetic.main.register_shop.*
+import kotlinx.android.synthetic.main.last_result.*
 import org.jetbrains.anko.startActivity
 
-class CardMake : AppCompatActivity() {
+class CardMake05_LastResult : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.register_shop)
+        setContentView(R.layout.activity_card_make05__last_result)
 
-        next1.setOnClickListener {
-            startActivity<CardMake01>()
+        back6.setOnClickListener {
+            startActivity<CardMake04_FeePlan>()
         }
     }
 }
