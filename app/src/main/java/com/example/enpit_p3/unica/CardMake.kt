@@ -13,6 +13,8 @@ class CardMake : AppCompatActivity() {
 
         next1.setOnClickListener {
             startActivity<CardMake01>()
+
+            //test
         }
     }
 }
