@@ -16,9 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CardMake03_result" />
-        <activity android:name=".CardMake04_FeePlan" />
-        <activity android:name=".CardMake05_LastResult" />
+        <activity android:name=".CardMake04LayoutCheck" />
+        <activity android:name=".CardMake05FeePlan" />
+        <activity android:name=".CardMake06LastResult" />
+        <activity android:name=".CardMake02Type" />
+        <activity android:name=".CardMake03Layout" />
     </application>
 
 </manifest>
