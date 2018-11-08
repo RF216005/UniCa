@@ -12,7 +12,7 @@ class CardMake01RegisterShop : AppCompatActivity() {
         setContentView(R.layout.activity_card_make01_register_shop)
 
         next1.setOnClickListener {
-            startActivity<CardMake02Type>() 
+            startActivity<CardMake02Type>()
         }
     }
 }
