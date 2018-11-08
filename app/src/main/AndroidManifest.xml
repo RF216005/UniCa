@@ -9,18 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CardMake">
+        <activity android:name=".CardMake01RegisterShop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CardMake01" />
-        <activity android:name=".CardMake02" />
         <activity android:name=".CardMake03_result" />
         <activity android:name=".CardMake04_FeePlan" />
-        <activity android:name=".CardMake05_LastResult"></activity>
+        <activity android:name=".CardMake05_LastResult" />
     </application>
 
 </manifest>
