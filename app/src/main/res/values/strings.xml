@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">UniCa</string>
+    <string name="toukou">投稿</string>
+    <string name="coupon_setting">クーポン券編集</string>
+    <string name="setting">設定</string>
+    <string name="barcode_scan">QRko-do</string>
+    <string name="scan">QRコード読込</string>
+    <string name="back_nome">終了</string>
+    <string name="text">QRコードの読込が完了しました。</string>
 </resources>

@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.enpit_p3.unica">
 
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,6 +25,11 @@
         <activity android:name=".CardMake06LastResult" />
         <activity android:name=".CardMake02Type" />
         <activity android:name=".CardMake03Layout" />
+        <activity android:name=".HomeShop" />
+        <activity android:name=".QRcodeScan"
+            android:screenOrientation="fullSensor"/>
+        <activity android:name=".CouponSetting" />
+        <activity android:name=".SettingShop"></activity>
     </application>
 
 </manifest>

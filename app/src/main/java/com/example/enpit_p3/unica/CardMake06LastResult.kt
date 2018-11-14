@@ -14,5 +14,9 @@ class CardMake06LastResult : AppCompatActivity() {
         back6.setOnClickListener {
             startActivity<CardMake05FeePlan>()
         }
+
+        finish2.setOnClickListener {
+            startActivity<HomeShop>()
+        }
     }
 }
