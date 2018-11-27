@@ -18,5 +18,7 @@ class CardMake06LastResult : AppCompatActivity() {
         finish2.setOnClickListener {
             startActivity<HomeShop>()
         }
+
+
     }
 }

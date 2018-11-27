@@ -14,5 +14,9 @@ class CardMake01RegisterShop : AppCompatActivity() {
         next1.setOnClickListener {
             startActivity<CardMake02Type>()
         }
+
+        back1.setOnClickListener {
+            startActivity<Select>()
+        }
     }
 }

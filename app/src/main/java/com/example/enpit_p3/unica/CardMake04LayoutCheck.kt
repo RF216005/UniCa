@@ -11,7 +11,9 @@ class CardMake04LayoutCheck : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_card_make04_layout_check)
 
-        back4.setOnClickListener {}
+        back4.setOnClickListener {
+            startActivity<CardMake03Layout>()
+        }
 
         next4.setOnClickListener {
             startActivity<CardMake05FeePlan>()
