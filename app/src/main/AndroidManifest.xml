@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Select">
+        <activity android:name=".HomeShop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,7 +23,6 @@
         <activity android:name=".CardMake06LastResult" />
         <activity android:name=".CardMake02Type" />
         <activity android:name=".CardMake03Layout" />
-        <activity android:name=".HomeShop" />
         <activity
             android:name=".QRcodeScan"
             android:screenOrientation="fullSensor"
@@ -34,7 +33,9 @@
         <activity android:name=".CaptureActivityOrientation" />
         <activity android:name=".CardMake01RegisterShop" />
         <activity android:name=".MessageList" />
-        <activity android:name=".MessageMake"></activity>
+        <activity android:name=".MessageMake" />
+        <activity android:name=".ListChatItem" >
+        </activity>
     </application>
 
 </manifest>
