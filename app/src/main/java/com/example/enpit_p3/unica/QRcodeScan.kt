@@ -8,13 +8,14 @@ import org.jetbrains.anko.startActivity
 
 class QRcodeScan : AppCompatActivity() {
 
-    override fun onCreate(saveInstanceState: Bundle?){
+
+    override fun onCreate(saveInstanceState: Bundle?) {
         super.onCreate(saveInstanceState)
         setContentView(R.layout.activity_qrcode_scan)
 
         IntentIntegrator(this).initiateScan()
 
-        finsh_scan.setOnClickListener {
+        finish_scan.setOnClickListener {
             startActivity<HomeShop>()
         }
     }
