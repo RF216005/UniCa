@@ -43,4 +43,10 @@
     <string name="back_1">戻る</string>
     <string name="save">投稿</string>
     <string name="setumei">投稿するタイトルと内容を入力し、投稿をタップしてください。</string>
+    <string name="back_2">戻る</string>
+    <string name="new01">投稿する</string>
+    <string name="testname">テスト</string>
+    <string name="detail" />
+    <string name="title2" />
+    <string name="reload">更新</string>
 </resources>

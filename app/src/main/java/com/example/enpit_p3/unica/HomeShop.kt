@@ -1,3 +1,4 @@
+@file:Suppress("UNREACHABLE_CODE")
 package com.example.enpit_p3.unica
 
 import android.os.Bundle
@@ -21,6 +22,10 @@ class HomeShop : AppCompatActivity() {
 
         button3.setOnClickListener {
             startActivity<SettingShop>()
+        }
+
+        info.setOnClickListener {
+            startActivity<MessageList>()
         }
     }
 }
