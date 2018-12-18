@@ -12,19 +12,30 @@ class CardMake03Layout : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_card_make03_layout)
 
-        val pref = PreferenceManager.getDefaultSharedPreferences(this)
 
-        val shopService = pref.getString("SHOP_SERVICE", "")
 
         next3.setOnClickListener {
-            val editor = pref.edit()
-                    .putString("SHOP_SERVICE", editText.text.toString())
-                    .apply()
+            saveData()
             startActivity<CardMake04LayoutCheck>()
         }
 
         back3.setOnClickListener {
             startActivity<CardMake02Type>()
         }
+    }
+
+    private fun saveData() {
+        val pref = PreferenceManager.getDefaultSharedPreferences(this)
+        val shopService = pref.getString("SHOP_SERVICE", "")
+        val shopService2 = pref.getString("SHOP_SERVICE2","")
+        val shopService3 = pref.getString("SHOP_SERVICE3","")
+        val shopContents = pref.getString("SHOP_CONTENTS","")
+
+        val editor = pref.edit()
+                .putString("SHOP_SERVICE", editText.text.toString())
+                .putString("SHOP_SERVICE2", editText2.text.toString())
+                .putString("SHOP_SERVICE3", editText4.text.toString())
+                .putString("SHOP_CONTENTS", editText5.text.toString())
+                .apply()
     }
 }
