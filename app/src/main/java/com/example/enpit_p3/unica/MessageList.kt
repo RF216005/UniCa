@@ -17,6 +17,7 @@ class MessageList : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_message_list)
+        
         val database3 = FirebaseDatabase.getInstance().getReference("title")
         database3.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {

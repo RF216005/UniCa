@@ -49,4 +49,21 @@
     <string name="detail" />
     <string name="title2" />
     <string name="reload">更新</string>
+    <string name="titleView" />
+    <string name="detailView" />
+    <string name="title_activity_message_list_show">MessageListShow</string>
+    <string name="CouponEdit">編集したい部分をタップしてください。</string>
+    <string name="shopName" />
+    <string name="CouponText">サービス券一覧</string>
+    <string name="Coupon1" />
+    <string name="Coupon2" />
+    <string name="Coupon3" />
+    <string name="CouponSet">変更</string>
+    <string name="back_coupon_setting">戻る</string>
+    <string name="newcoupon1" />
+    <string name="newcoupon2" />
+    <string name="newcoupon3" />
+    <string name="PR" />
+    <string name="newPR" />
+    <string name="textvew26">の編集</string>
 </resources>
