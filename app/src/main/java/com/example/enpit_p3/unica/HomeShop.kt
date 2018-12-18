@@ -20,9 +20,6 @@ class HomeShop : AppCompatActivity() {
             startActivity<CouponSetting>()
         }
 
-        button3.setOnClickListener {
-            startActivity<SettingShop>()
-        }
 
         info.setOnClickListener {
             startActivity<MessageList>()
