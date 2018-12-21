@@ -18,11 +18,13 @@ class MessageListShow : AppCompatActivity() {
 
         val listView = findViewById(R.id.listView) as ListView
         val dataArray = arrayOf("title","edittitle")
+        intArrayOf(android.R.id.text1, android.R.id.text2)
         val adapter = ArrayAdapter<String>(this,android.R.layout.simple_expandable_list_item_1,dataArray)
         listView.adapter = adapter
 
         listView.setOnItemClickListener { parent, view, position, id ->
-            val itemTextView:TextView = view.findViewById(android.R.id.text1)
+            val title = view.findViewById<TextView>(android.R.id.text1)
+            val detail = view.findViewById<TextView>(android.R.id.text2)
             startActivity<HomeShop>()
         }
         fab.setOnClickListener { view ->

@@ -18,7 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CardMake04LayoutCheck"/>
+        <activity android:name=".CardMake04LayoutCheck" />
         <activity android:name=".CardMake05FeePlan" />
         <activity android:name=".CardMake06LastResult" />
         <activity android:name=".CardMake02Type" />
@@ -40,6 +40,7 @@
             android:name=".MessageListShow"
             android:label="@string/title_activity_message_list_show"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MessageShow"></activity>
     </application>
 
 </manifest>
