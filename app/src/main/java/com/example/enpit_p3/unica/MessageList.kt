@@ -18,8 +18,8 @@ class MessageList : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_message_list)
         
-        val database3 = FirebaseDatabase.getInstance().getReference("title")
-        database3.addValueEventListener(object : ValueEventListener {
+        val database = FirebaseDatabase.getInstance().getReference("title")
+        database.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
 
                 val title = snapshot.value.toString()
@@ -31,11 +31,11 @@ class MessageList : AppCompatActivity() {
             }
         })
 
-        val database4 = FirebaseDatabase.getInstance().getReference("detail")
-        database4.addValueEventListener(object : ValueEventListener {
+        val database2 = FirebaseDatabase.getInstance().getReference("detail")
+        database2.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
 
-                var detail = snapshot.value.toString()
+                val detail = snapshot.value.toString()
                 textView14.text = detail
             }
 
@@ -58,19 +58,6 @@ class MessageList : AppCompatActivity() {
                         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
                     }
                 })
-
-                val database2 = FirebaseDatabase.getInstance().getReference("detail")
-                database2.addValueEventListener(object : ValueEventListener {
-                    override fun onDataChange(snapshot: DataSnapshot) {
-
-                        var detail = snapshot.value.toString()
-                        textView14.text = detail
-                    }
-
-                    override fun onCancelled(error: DatabaseError) {
-                        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-                    }
-                })
             }
 
 
@@ -84,8 +71,6 @@ class MessageList : AppCompatActivity() {
             startActivity<MessageMake>()
 
         }
-
-
     }
 }
 

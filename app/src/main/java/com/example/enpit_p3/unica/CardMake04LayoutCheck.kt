@@ -18,12 +18,13 @@ class CardMake04LayoutCheck : AppCompatActivity() {
         val shopService2 = pref.getString("SHOP_SERVICE2","")
         val shopService3 = pref.getString("SHOP_SERVICE3","")
         val shopContents = pref.getString("SHOP_CONTENTS","")
+        val itemName = pref.getString("ITEM_NAME","")
 
         textView.text = shopService
         textView1.text = shopService2
         textView3.text = shopService3
         textView13.text  = shopContents
-
+        textView19.text = itemName
 
         back4.setOnClickListener {
             startActivity<CardMake03Layout>()

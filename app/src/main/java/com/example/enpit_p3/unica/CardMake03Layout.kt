@@ -30,12 +30,14 @@ class CardMake03Layout : AppCompatActivity() {
         val shopService2 = pref.getString("SHOP_SERVICE2","")
         val shopService3 = pref.getString("SHOP_SERVICE3","")
         val shopContents = pref.getString("SHOP_CONTENTS","")
+        val ItemName = pref.getString("ITEM_NAME","")
 
         val editor = pref.edit()
                 .putString("SHOP_SERVICE", editText.text.toString())
                 .putString("SHOP_SERVICE2", editText2.text.toString())
                 .putString("SHOP_SERVICE3", editText4.text.toString())
                 .putString("SHOP_CONTENTS", editText5.text.toString())
+                .putString("ITEM_NAME",editText6.text.toString())
                 .apply()
     }
 }

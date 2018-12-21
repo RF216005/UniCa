@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">UniCa</string>
     <string name="toukou">投稿</string>
-    <string name="coupon_setting">クーポン券編集</string>
+    <string name="coupon_setting">サービス券編集</string>
     <string name="setting">設定</string>
     <string name="barcode_scan">QRko-do</string>
     <string name="scan">QRコード読込</string>
@@ -66,4 +66,20 @@
     <string name="PR" />
     <string name="newPR" />
     <string name="textvew26">の編集</string>
+    <string name="CouponCheck1" />
+    <string name="CouponCheck2" />
+    <string name="CouponCheck3" />
+    <string name="PrCheck" />
+    <string name="titlelist" />
+    <string name="detailshow" />
+    <string name="backList">戻る</string>
+    <string name="detailbutton">詳細</string>
+    <string name="toiukouzyoukyou">現在投稿しているお知らせです。\n新しく投稿する場合は投稿するをタップしてください。</string>
+    <string name="before">変更前</string>
+    <string name="after">変更後</string>
+    <string name="osuusme">おすすめ商品を入力してください</string>
+    <string name="itemName" />
+    <string name="itemname" />
+    <string name="item" />
+    <string name="osiraseq">この内容はサービス券のお知らせに表示されます。</string>
 </resources>
