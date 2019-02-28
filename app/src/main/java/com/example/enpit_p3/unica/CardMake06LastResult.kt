@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_card_make06_last_result.*
 import org.jetbrains.anko.alert
+import org.jetbrains.anko.noButton
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.yesButton
 
@@ -27,6 +28,8 @@ class CardMake06LastResult : AppCompatActivity() {
         val shopService3 = pref.getString("SHOP_SERVICE3","")
         val shopContents = pref.getString("SHOP_CONTENTS","")
         val itemName = pref.getString("ITEM_NAME","")
+
+        val loginFrag = pref.getInt("LOGIN_FRAG", 0)
 
         couponCheck1.text = shopService
         couponCheck2.text = shopService2
@@ -101,9 +104,15 @@ class CardMake06LastResult : AppCompatActivity() {
                     ref11.setValue(value11)
                     ref12.setValue(value12)
 
+                    pref.edit()
+                            .putInt("LOGIN_FRAG", 1)
+                            .apply()
+
                     finish()
                     startActivity<HomeShop>()
                 }
+
+                noButton {}
             }.show()
         }
     }
