@@ -31,6 +31,7 @@
         android:layout_marginBottom="16dp"
         android:background="@color/colorPrimary"
         android:text="戻る"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -43,6 +44,7 @@
         android:layout_marginBottom="16dp"
         android:background="@color/colorPrimary"
         android:text="次へ"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
